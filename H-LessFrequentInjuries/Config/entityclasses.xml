@@ -1,0 +1,81 @@
+<config>
+	<remove xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='BuffResistance'][@value='0']"></remove>
+	<!-- Change value to higher to decrease chance of getting injured or lower to increase it -->
+	<!-- You can setup each injury individually -->
+	<!-- 0 means no change to resistance, -1 means 100% resistance reduction to that injury -->
+	<!-- Fatigued: default = 0 -->
+	<insertAfter xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='BuffResistance'][@value='1']">
+		<passive_effect name="BuffResistance" operation="base_add" value="0" tags="buffFatiguedTrigger"/>
+	</insertAfter>
+	<!-- Sprained/broken arm: default = 0 -->
+	<insertAfter xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='BuffResistance'][@value='1']">
+		<passive_effect name="BuffResistance" operation="base_add" value=".5" tags="buffArmSprainedCHTrigger"/>
+	</insertAfter>
+	<!-- Sprained/broken leg: default = 0 -->
+	<insertAfter xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='BuffResistance'][@value='1']">
+		<passive_effect name="BuffResistance" operation="base_add" value=".5" tags="buffLegSprainedCHTrigger"/>
+	</insertAfter>
+	<!-- Laceration: default = 0 -->
+	<insertAfter xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='BuffResistance'][@value='1']">
+		<passive_effect name="BuffResistance" operation="base_add" value="0" tags="buffLaceration"/>
+	</insertAfter>
+	<!-- Abrasion: default = 0 -->
+	<insertAfter xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='BuffResistance'][@value='1']">
+		<passive_effect name="BuffResistance" operation="base_add" value="0" tags="buffAbrasionCatch"/>
+	</insertAfter>
+	<!-- Infection: default = 0 -->
+	<insertAfter xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='BuffResistance'][@value='1']">
+		<passive_effect name="BuffResistance" operation="base_add" value=".5" tags="buffInfectionCatch"/>
+	</insertAfter>
+	<!-- Stunned: default = -.1 -->
+	<insertAfter xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='BuffResistance'][@value='1']">
+		<passive_effect name="BuffResistance" operation="base_add" value="0" tags="buffInjuryStunned01CHTrigger"/>
+	</insertAfter>
+	<!-- Bleeding: default = -.1 -->
+	<insertAfter xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='BuffResistance'][@value='1']">
+		<passive_effect name="BuffResistance" operation="base_add" value="0" tags="buffInjuryBleedingTwo"/>
+	</insertAfter>
+	<!-- Bleeding barbed wire: default = 0 -->
+	<insertAfter xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='BuffResistance'][@value='1']">
+		<passive_effect name="BuffResistance" operation="base_add" value="0" tags="buffInjuryBleedingBarbedWire"/>
+	</insertAfter>
+	<!-- Change value to higher to decrease chance of getting injured or lower to increase it -->
+	<!-- You can setup each injury individually -->
+	<!-- 0 means no change to resistance, -1 means 100% resistance reduction to that injury -->
+	<!-- Fatigued: default = 0 -->
+	<insertAfter xpath="/entity_classes/entity_class[@name='playerFemale']/effect_group/passive_effect[@name='BuffResistance'][@value='1']">
+		<passive_effect name="BuffResistance" operation="base_add" value="0" tags="buffFatiguedTrigger"/>
+	</insertAfter>
+	<!-- Sprained/broken arm: default = 0 -->
+	<insertAfter xpath="/entity_classes/entity_class[@name='playerFemale']/effect_group/passive_effect[@name='BuffResistance'][@value='1']">
+		<passive_effect name="BuffResistance" operation="base_add" value=".5" tags="buffArmSprainedCHTrigger"/>
+	</insertAfter>
+	<!-- Sprained/broken leg: default = 0 -->
+	<insertAfter xpath="/entity_classes/entity_class[@name='playerFemale']/effect_group/passive_effect[@name='BuffResistance'][@value='1']">
+		<passive_effect name="BuffResistance" operation="base_add" value=".5" tags="buffLegSprainedCHTrigger"/>
+	</insertAfter>
+	<!-- Laceration: default = 0 -->
+	<insertAfter xpath="/entity_classes/entity_class[@name='playerFemale']/effect_group/passive_effect[@name='BuffResistance'][@value='1']">
+		<passive_effect name="BuffResistance" operation="base_add" value="0" tags="buffLaceration"/>
+	</insertAfter>
+	<!-- Abrasion: default = 0 -->
+	<insertAfter xpath="/entity_classes/entity_class[@name='playerFemale']/effect_group/passive_effect[@name='BuffResistance'][@value='1']">
+		<passive_effect name="BuffResistance" operation="base_add" value="0" tags="buffAbrasionCatch"/>
+	</insertAfter>
+	<!-- Infection: default = 0 -->
+	<insertAfter xpath="/entity_classes/entity_class[@name='playerFemale']/effect_group/passive_effect[@name='BuffResistance'][@value='1']">
+		<passive_effect name="BuffResistance" operation="base_add" value=".5" tags="buffInfectionCatch"/>
+	</insertAfter>
+	<!-- Stunned: default = -.1 -->
+	<insertAfter xpath="/entity_classes/entity_class[@name='playerFemale']/effect_group/passive_effect[@name='BuffResistance'][@value='1']">
+		<passive_effect name="BuffResistance" operation="base_add" value=".3" tags="buffInjuryStunned01CHTrigger"/>
+	</insertAfter>
+	<!-- Bleeding: default = -.1 -->
+	<insertAfter xpath="/entity_classes/entity_class[@name='playerFemale']/effect_group/passive_effect[@name='BuffResistance'][@value='1']">
+		<passive_effect name="BuffResistance" operation="base_add" value="0" tags="buffInjuryBleedingTwo"/>
+	</insertAfter>
+	<!-- Bleeding barbed wire: default = 0 -->
+	<insertAfter xpath="/entity_classes/entity_class[@name='playerFemale']/effect_group/passive_effect[@name='BuffResistance'][@value='1']">
+		<passive_effect name="BuffResistance" operation="base_add" value="0" tags="buffInjuryBleedingBarbedWire"/>
+	</insertAfter>
+</config>
